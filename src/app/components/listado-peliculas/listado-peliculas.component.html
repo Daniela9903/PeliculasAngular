@@ -21,38 +21,12 @@
                         <th scope="col">Más información</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td><!-- Button trigger modal -->
-                          <button type="button" class="btn  btn-listado" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            Información
-                          </button>
-                          
-                          <!-- Modal -->
-                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content modal-lista">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  ...
-                                </div>
-                                
-                              </div>
-                            </div>
-                          </div></td>
-                      </tr>
-                      
+                    <tbody *ngFor="let mensaje of mensajes">
 
                       <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>{{mensaje.nombre_pelicula}}</td>
+                        <td>{{mensaje.lo}}</td>
+                        <td>{{mensaje.cal}}</td>
                         <td><!-- Button trigger modal -->
                           <button type="button" class="btn  btn-listado" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Información
@@ -63,11 +37,14 @@
                             <div class="modal-dialog">
                               <div class="modal-content modal-lista">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                  <h5 class="modal-title" id="staticBackdropLabel">{{mensaje.nombre_pelicula}}</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                <h4>Año de estreno: {{mensaje.anio_peli}}</h4>
+                                  <h4>Sinopsis</h4>
+                                  <label>{{mensaje.sinopsis}}</label>
+
                                 </div>
                                 
                               </div>
