@@ -1,11 +1,40 @@
 .card-tabla{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
+h1{
+    color: azure;
+}
+
+
+
 
 thead{
     background-color: #C412A4;
     color: azure;
 }
 
+.btn-listado{
+    color: #ffffff; 
+    border: 3px solid #4509acf3 ;
+    text-decoration: none; 
+    border-radius: 50px; 
+}
+td{
+    background-color: rgba(151, 173, 173, 0.336);
+        color: rgb(253, 253, 253);
+}
+
+.btn-listado:hover{
+    background: #4509acd2;
+    color: azure;
+}
+
+.modal-lista{
+    background-color: #4509acd2;
+}
+
+.modal-title{
+    color: azure;
+}
