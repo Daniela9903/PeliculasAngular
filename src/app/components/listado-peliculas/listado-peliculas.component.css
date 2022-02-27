@@ -1,7 +1,6 @@
 .card-tabla{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
 }
 h1{
     color: azure;
@@ -15,6 +14,11 @@ thead{
     color: azure;
 }
 
+.imagentabla{
+    height: 100%;
+    width: 100%;
+}
+
 .btn-listado{
     color: #ffffff; 
     border: 3px solid #4509acf3 ;
@@ -22,7 +26,6 @@ thead{
     border-radius: 50px; 
 }
 td{
-    background-color: rgba(151, 173, 173, 0.336);
         color: rgb(253, 253, 253);
 }
 
