@@ -7,6 +7,10 @@ a:hover{
     color: antiquewhite;
 }
 
+a:visited{
+    color: rgb(255, 255, 255);
+  }
+
 .fa-search{
     color: azure;
 }
