@@ -1,0 +1,42 @@
+.card-registro{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: #18023f;
+}
+
+
+.imagenRegistro{
+    width: 60%;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formRegistro{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-label{
+    color: azure;
+}
+.btnRegistro{
+    margin-top: 20px;
+    border: 2px solid #4509acf3; /*anchura, estilo y color borde*/
+    background-color:#18023f; 
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    margin-bottom: 20px;
+}
+
+.btnRegistro:hover{
+    background: #4509acf3;
+}
+
+
+.form-control{
+    background-color: rgba(151, 173, 173, 0.336);
+    color: azure;
+}

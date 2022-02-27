@@ -1,0 +1,39 @@
+.imagenlogin{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.labelLogin{
+color: rgb(255, 255, 255);
+margin-bottom: 10px;
+}
+
+.btnLogin{
+    margin-top: 20px;
+    border: 2px solid #C412A4; /*anchura, estilo y color borde*/
+    background-color:#18023f; 
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    }
+    
+
+    .btnLogin:hover{
+        background: #C412A4;
+    }
+
+    h1{
+        color: rgb(255, 255, 255);
+    }
+
+    h4{
+        color: rgb(255, 255, 255);
+    }
+    
+
+    .form-control{
+        background-color: rgba(151, 173, 173, 0.336);
+        color: azure;
+    }

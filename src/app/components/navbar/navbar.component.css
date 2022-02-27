@@ -1,0 +1,27 @@
+a{
+    color: azure;
+
+}
+
+a:hover{
+    color: antiquewhite;
+}
+
+.fa-search{
+    color: azure;
+}
+
+.btn_navbar{
+    background-color: #C412A4;
+    border-radius: 50%;
+}
+
+.btn_navbar:hover{
+    background-color: #c412a3bd;
+    
+}
+
+.form-control{
+    background-color: rgba(151, 173, 173, 0.336);
+    color: azure;
+}
