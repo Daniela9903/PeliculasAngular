@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ListaService } from 'src/app/services/lista.service';
-
+import { Api } from 'src/app/interface/api.modelo';
 @Component({
   selector: 'app-listado-peliculas',
   templateUrl: './listado-peliculas.component.html',
@@ -8,6 +8,7 @@ import { ListaService } from 'src/app/services/lista.service';
 })
 export class ListadoPeliculasComponent implements OnInit {
   mensajes: any[] = [];
+ 
   constructor(private listaService:ListaService) { }
 
   ngOnInit(): void {

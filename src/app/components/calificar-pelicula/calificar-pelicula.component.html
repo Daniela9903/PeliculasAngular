@@ -1,16 +1,29 @@
-<div class="container container-calificar col-12">
 
-
-   <div class="col-4 mt-5 card-Calif">
-    <div class="card-tarjeta">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- <div class="row">
+      <div *ngFor="let mensaje of mensajes"
+       class="col-md-5 col-sn-6 mt-5 contenido-tarjetas">
+        <div class="card card-Calif col-7">
+          <div class="card-body">
+            <h5>{{mensaje.nombre_pelicula}}</h5>
+          </div>
         </div>
+
+      </div>
+    </div> -->
+
+    <div *ngFor="let mensaje of mensajes" class="card card-Calif col-md-3 col-sn-6 mt-5">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5>Nombre:</h5>
+        <p class="card-text">{{mensaje.nombre_pelicula}}</p>
+        
+        <button type="button" class="btn btn-outline-light btnLike"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+        <button type="button"  class="btn btn-outline-light btnLike mx-3"><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
       </div>
     </div>
 
     
 
-</div>
+    
+
+    

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,5 +14,11 @@ export class ListaService {
     return this.http.get(this.URL);
     
   }
+
+  creatPelicula(peliculas: any): Observable<any>{
+    return this.http.post(this.URL, peliculas);
+  }
+
+
 
 }

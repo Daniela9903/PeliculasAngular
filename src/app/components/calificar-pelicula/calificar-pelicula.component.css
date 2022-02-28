@@ -1,8 +1,23 @@
 .card-Calif{
-    margin-left: auto;
-    margin-right: auto;
     background-color: #97adad56;
     color: azure;
     border-radius: 3%;
     border: solid 3px #97adad98 ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.btnLike{
+    margin-top: 20px;
+    border: 2px solid #C412A4; /*anchura, estilo y color borde*/
+    background-color:#18023f; 
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 50px; 
+}
+
+
+.btnLike:hover{
+    background: #C412A4;
 }

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { ListadoPeliculasComponent } from './components/listado-peliculas/listado-peliculas.component';
@@ -10,6 +11,7 @@ import { CalificarPeliculaComponent } from './components/calificar-pelicula/cali
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './components/login/login.component';
 import { AgregarPeliComponent } from './components/agregar-peli/agregar-peli.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,10 @@ import { AgregarPeliComponent } from './components/agregar-peli/agregar-peli.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  
    
   ],
   providers: [],
