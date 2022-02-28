@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ListaService } from 'src/app/services/lista.service';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class AgregarPeliComponent implements OnInit {
     cal:'',
     sinopsis:''
   });
-  constructor(private listaService:ListaService ,private formBuilder:FormBuilder) { }
+  constructor(private listaService:ListaService , private formBuilder:FormBuilder) { }
 
   ngOnInit(): void {
 
@@ -26,8 +27,18 @@ export class AgregarPeliComponent implements OnInit {
   }
 
   Guardar(){
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Pelicula agragada',
+      showConfirmButton: false,
+      timer: 1500
+    })
     console.log(this.formulario.value)
-    this.listaService.creatPelicula(this.formulario)
+    this.listaService.creatPelicula(this.formulario.value).subscribe((res:any) =>{
+      console.log(res)
+    })
+    
   }
 
 
